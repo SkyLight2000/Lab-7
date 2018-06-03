@@ -5,6 +5,26 @@
 Complex a(5, 2);
 Complex b(3, -3);
 
+int menu(const char* menu_items[])
+{
+	int n;
+	for (n = 0; menu_items[n]; ++n)
+	{
+		printf("\t[%d]. %s\n", n, menu_items[n]);
+	}
+
+	int i = -1;
+	printf("\tChoice: ");
+	if (scanf("%d", &i) == 1)
+	{
+		if (i >= 0 && i < n)
+		{
+			return i;
+		}
+	}
+	return i;
+}
+
 int tab_handler1(void* p) {
 	return view();
 }
