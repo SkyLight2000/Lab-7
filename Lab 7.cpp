@@ -5,8 +5,6 @@
 #include "Complex.h"
 #include "funcs.h"
 
-
-
 int main()
 {
 	SetConsoleOutputCP(1251);
